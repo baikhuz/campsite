@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://baikhuz:459745@campsitedb-f0vmc.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://baikhuz:459745@campsitedb-f0vmc.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "yo"
 }
