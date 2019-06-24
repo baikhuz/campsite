@@ -9,7 +9,8 @@ const connectDB = async () => {
     await mongoose.connect(db, {
       // line below prompts mongoose to use the new version of parses (the older is deprecated and throws a warning)
       useNewUrlParser: true,
-      useCreateIndex: true
+      useCreateIndex: true,
+      useFindAndModify: false
     });
     console.log("Database is connected.");
   } catch (err) {

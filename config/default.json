@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://baikhuz:459745@campsitedb-f0vmc.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "yo"
+  "jwtSecret": "yo",
+  "githubClientId": "89e8bc2bb5bd0f719367",
+  "githubSecret": "0e756b510b0210635ec54f65e1edb12b1dc9bcce"
 }
