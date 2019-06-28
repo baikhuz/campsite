@@ -40,10 +40,10 @@ router.post(
   [
     authMiddleware,
     [
-      check("status", "status is required")
+      check("status", "Type in your current job")
         .not()
         .isEmpty(),
-      check("skills", "skills is required")
+      check("skills", "Fill in your skills")
         .not()
         .isEmpty()
     ]
