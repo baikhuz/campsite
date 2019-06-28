@@ -22,6 +22,8 @@ router.get("/me", authMiddleware, async (req, res) => {
 
     if (!profile) {
       return res.status(400).json({ msg: "No such user profile exists" });
+    } else {
+      return res.status(200).json(profile);
     }
   } catch (err) {
     console.error(err.message);
