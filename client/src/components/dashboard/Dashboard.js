@@ -15,7 +15,7 @@ const Dashboard = ({
   profile: { profile, loading }
 }) => {
   useEffect(() => {
-    if (getCurrentProfile) getCurrentProfile();
+    getCurrentProfile();
   }, [getCurrentProfile]);
 
   return loading && profile === null ? (
