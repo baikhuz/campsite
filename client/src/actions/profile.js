@@ -79,15 +79,20 @@ export const getGithubRepos = username => async dispatch => {
   try {
     const res = await axios.get(`/api/profile/github/${username}`);
 
+    console.log(res);
+
     dispatch({
-      type: GET_PROFILE,
+      type: GET_REPOS,
       payload: res.data
     });
   } catch (err) {
     console.log(err);
     dispatch({
       type: PROFILE_ERROR,
-      payload: { msg: err.response.statusText, status: err.response.status }
+      payload: {
+        msg: err.response && err.response.statusText,
+        status: err.response && err.response.status
+      }
     });
   }
 };
